@@ -20,40 +20,65 @@
     </header>
   <main>
     <section>
+      <h2>Фильтр поиска</h2>
       <form action="#" method="post">
-        <label>Инфраструктура:
-          <input type="radio" name="benefits" value="pool" checked>Бассейн
-        <br>
-          <input type="radio" name="benefits" value="parking">Парковка
-        <br>
-          <input type="radio" name="benefits" value="wi-fi">Wi-Fi
-        </br>
-       </label>
-       <label>Тип жилья:
-         <input type="radio" name="accomodation" value="hotel" checked>Гостиница
-       <br>
-         <input type="radio" name="accomodation" value="motel" checked>Мотель
-       <br>
-         <input type="radio" name="accomodation" value="apartments" checked>Апартаменты
-       </br>
-      </label>
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+        <ul>
+        <li>
+          <input type="checkbox" name="pool" id="filter-pool" checked>
+          <label for="filter-pool">Бассейн</label>
+        </li>
+        <li>
+          <input type="checkbox" name="parking" id="filter-parking">
+          <label for="filter-parking">Парковка</label>
+        </li>
+        <li>
+          <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+          <label for="filter-wi-fi">Wi-Fi<label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+       <legend>Тип жилья:</legend>
+       <ul>
+         <li>
+          <input type="checkbox" name="hotel" id="filter-hotel" checked>
+          <label for="filter-hotel">Гостиница</label>
+        </li>
+       <li>
+         <input type="checkbox" name="motel" id="filter-motel" checked>
+         <label for="filter-motel">Мотель</label>
+       </li>
+       <li>
+         <input type="checkbox" name="apartments" id="filter-apartments" checked>
+         <label>Апартаменты</label>
+       </li>
+     </ul>
+   </fieldset>
     </form>
     <form action="#" method="post" oninput="sumoutput.value=sumcount.value">
-      <label for="sumcount">Стоимость в сутки (р):<br>
-        <output name="min-range" selected>от 0
-        <output name="max-range" selected>до 3000
+      <label for="sumcount">Стоимость в сутки (р):</label>
+        <output name="min-range" id="min-range" selected>
+          <label for="min-range">от 0</label>
+        <output name="max-range" id="max-range" selected>
+          <label for="max-range">до 3000</label>
         <input type="range" id="sumcount" min="0" max="4000">
-      </label>
-      <input type="submit" value="Показать">
+      <button type="submit">Показать</button>
     </form>
     <form action="#" method="post">
-    <span>найдено:3</span>
-    <label>сортировка: 
-    <input type="radio" name="sorting" value="price" checked>по цене
-    <input type="radio" name="sorting" value="type">по типу
-    <input type="radio" name="sorting" value="rating">по рейтингу
-    </label>
-     </section>
+     <span>найдено:3</span>
+    <fieldset>
+     <legend>сортировка:</legend>
+      <input type="radio" name="sorting" value="price" id="fiter-sorting" checked>
+       <label for="fiter-sorting">по цене</label>
+      <input type="radio" name="sorting" value="type">
+       <label for="fiter-sorting">по типу</label>
+      <input type="radio" name="sorting" value="rating">
+       <label for="fiter-sorting">по рейтингу</label>
+    </fieldset>
+    </form>
+  </section>
     <section>
       <ul>
         <li>

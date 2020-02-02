@@ -93,21 +93,17 @@
   <p>Укажите предполагаемые даты поездки<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 <button type="button" id="form-field">Поиск гостиницы в Седоне</button>
 <form action="https://echo.htmlacademy.ru/courses" method="get" id="form-field">
-  <label>Дата заезда:
-    <input type="date" selected>24 апреля 2017
-  </label>
-  <label>Дата выезда:
-    <input type="date" selected>4 июля 2017
-  </label>
+  <label for="field-date-in">Дата заезда:</label>
+    <input type="date" id="field-date-in" placeholder="24 апреля 2017">
+  <label for="field-date-out">Дата выезда:</label>
+    <input type="date" id="fielf-date" placeholder="4 июля 2017">
   <div class="half-width">
-  <label>Взрослые:
-    <input type="number" min="0" step="1" selected>2
-  </label>
+  <label for="field-amount-adult">Взрослые:</label>
+    <input type="number" id="field-amount-adult" min="0" step="1" selected>2
 </div>
 <div class="half-width">
-<label>Дети:
-  <input type="number" min="0" step="1" selected>0
-</label>
+<label for="field-amount-kids">Дети:</label>
+  <input type="number" id="field-amount-kids" min="0" step="1" selected>0
 </div>
 <input type="submit" value="Найти">
 <a href="map.html"></a>
