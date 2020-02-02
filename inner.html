@@ -19,7 +19,41 @@
      </nav>
     </header>
   <main>
-    <!--здесь будет форма поиска жилья-->
+    <section>
+      <form action="#" method="post">
+        <label>Инфраструктура:
+          <input type="radio" name="benefits" value="pool" checked>Бассейн
+        <br>
+          <input type="radio" name="benefits" value="parking">Парковка
+        <br>
+          <input type="radio" name="benefits" value="wi-fi">Wi-Fi
+        </br>
+       </label>
+       <label>Тип жилья:
+         <input type="radio" name="accomodation" value="hotel" checked>Гостиница
+       <br>
+         <input type="radio" name="accomodation" value="motel" checked>Мотель
+       <br>
+         <input type="radio" name="accomodation" value="apartments" checked>Апартаменты
+       </br>
+      </label>
+    </form>
+    <form action="#" method="post" oninput="sumoutput.value=sumcount.value">
+      <label for="sumcount">Стоимость в сутки (р):<br>
+        <output name="min-range" selected>от 0
+        <output name="max-range" selected>до 3000
+        <input type="range" id="sumcount" min="0" max="4000">
+      </label>
+      <input type="submit" value="Показать">
+    </form>
+    <form action="#" method="post">
+    <span>найдено:3</span>
+    <label>сортировка: 
+    <input type="radio" name="sorting" value="price" checked>по цене
+    <input type="radio" name="sorting" value="type">по типу
+    <input type="radio" name="sorting" value="rating">по рейтингу
+    </label>
+     </section>
     <section>
       <ul>
         <li>
