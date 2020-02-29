@@ -32,11 +32,13 @@
        </ul>
      </nav>
     </header>
+    </div>
   <main>
+    <section class="main-description">
     <h1 class="visually-hidden">описание городка Седона</h1>
     <p class="description">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</p>
     <p class="five-reasons">Рассмотрим 5 причин, почему Седона круче, чем Гранд Каньон!</p>
-</div>
+  </section>
     <section class="reasons">
     <h2 class="visually-hidden">причины</h2>
     <ul class="reasons-list">
@@ -159,17 +161,15 @@
     <form class="booking-form" action="https://echo.htmlacademy.ru/courses" method="post" id="form-field">
       <p>
         <label for="field-date-in">Дата заезда:</label>
-        <input type="date" class="date" id="field-date-in" placeholder="24 апреля 2017">
+        <input type="text" class="date calendar" id="field-date-in" placeholder="24 апреля 2017">
       </p>
       <p>
       <label for="field-date-out">Дата выезда:</label>
-        <input type="date" class="date" id="fielf-date-out" placeholder="4 июля 2017">
+        <input type="text" class="date calendar" id="fielf-date-out" placeholder="4 июля 2017">
       </p>
       <div class="half-width">
       <label for="field-amount-adult">Взрослые:</label>
         <input type="number" id="field-amount-adult" min="0" step="1" selected placeholder="2">
-    </div>
-    <div class="half-width">
     <label for="field-amount-kids">Дети:</label>
       <input type="number" id="field-amount-kids" min="0" step="1" selected placeholder="0">
     </div>

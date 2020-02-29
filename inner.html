@@ -8,9 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="inner-page">
-    <!--<div class="background-image">
-    <img src="img/jpg/filter-background.jpg" alt="фон">
-  </div>-->
+    <div class="inner-background">
     <header class="main-header">
       <a class="main-header-logo" href="index.html">
         <svg viewBox="0 0 138 70" xmlns="http://www.w3.org/2000/svg" width="140" height="71" alt="логотип сайта "Седона"">
@@ -34,7 +32,7 @@
        </ul>
      </nav>
     </header>
-  <main class="inner-main">
+  <main>
     <section class="filters">
       <h2 class="visually-hidden">Фильтр поиска</h2>
       <form action="https://echo.htmlacademy.ru/courses" method="get">
@@ -42,15 +40,18 @@
           <legend>Инфраструктура:</legend>
         <ul>
         <li class="filter-option">
-          <input type="checkbox" name="pool" id="filter-pool" checked>
+          <input type="checkbox" name="pool" id="filter-pool" class="visually-hidden" checked>
+          <span class="checkbox-indicator"></span>
           <label for="filter-pool">Бассейн</label>
         </li>
         <li class="filter-option">
-          <input type="checkbox" name="parking" id="filter-parking">
+          <input type="checkbox" name="parking" id="filter-parking" class="visually-hidden">
+          <span class="checkbox-indicator"></span>
           <label for="filter-parking">Парковка</label>
         </li>
         <li class="filter-option">
-          <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+          <input type="checkbox" name="wi-fi" id="filter-wi-fi" class="visually-hidden">
+          <span class="checkbox-indicator"></span>
           <label for="filter-wi-fi">Wi-Fi<label>
           </li>
         </ul>
@@ -59,30 +60,44 @@
        <legend>Тип жилья:</legend>
        <ul>
          <li class="filter-option">
-          <input type="checkbox" name="hotel" id="filter-hotel" checked>
+          <input type="checkbox" name="hotel" id="filter-hotel" class="visually-hidden" checked>
+          <span class="checkbox-indicator"></span>
           <label for="filter-hotel">Гостиница</label>
         </li>
        <li class="filter-option">
-         <input type="checkbox" name="motel" id="filter-motel" checked>
+         <input type="checkbox" name="motel" id="filter-motel" class="visually-hidden" checked>
+         <span class="checkbox-indicator"></span>
          <label for="filter-motel">Мотель</label>
        </li>
        <li class="filter-option">
-         <input type="checkbox" name="apartments" id="filter-apartments" checked>
+         <input type="checkbox" name="apartments" id="filter-apartments" class="visually-hidden" checked>
+         <span class="checkbox-indicator"></span>
          <label>Апартаменты</label>
        </li>
      </ul>
    </fieldset>
     </form>
-    <form class="filter-form" action="https://echo.htmlacademy.ru/courses" method="post" oninput="sumoutput.value=sumcount.value">
-      <label for="sumcount">Стоимость в сутки (р):</label>
-        <output name="min-range" id="min-range" selected placeholder="от 0">
-          <label for="min-range"></label>
-        <output name="max-range" id="max-range" selected placeholder="до 3000">
-          <label for="max-range"></label>
-        <input type="range" id="sumcount" min="0" max="4000">
-      <button class="button" type="submit">Показать</button>
-    </form>
-    <section class="found">
+    <div class="filter-range">
+      <div class="filter-range-title">Стоимость в сутки (р):</div>
+        <div class="price-controls">
+          <label class="min-price">от
+            <input type="number" name="min-price" value="0">
+          </label>
+          <label class="max-price">до
+          <input type="number" name="max-price" value="3000">
+        </label>
+        </div>
+        <div class="range-controls">
+          <div class="scale">
+          <div class="bar"></div>
+        <div class="range-toggle range-toggle-min"></div>
+      <div class="range-toggle range-toggle-max"></div>
+         </div>
+      </div>
+      <button class="btn-transparent" type="submit">Показать</button>
+  </div>
+    </section>
+    <section class="found-results">
      <span>найдено: 3</span>
     <div class="sorting">
       <p>сортировка:</p>
@@ -90,8 +105,9 @@
        <p><a class="sorting-item" href="#">по типу</a></p>
        <p><a class="sorting-item" href="#">по рейтингу</a></p>
      </div>
+     <div class="switcher"></div>
    </section>
-  </section>
+ </div>
     <section class="results">
       <h2 class="visually-hidden">Результаты поиска жилья</h2>
       <ul class="results-list">
@@ -103,8 +119,6 @@
           <a href="#">Amara resort & Spa</a>
           <p>гостиница</p>
           <p>от 4000 Р.</p>
-        </div>
-        <div class="inner-description-button">
           <a class="button1" href="#">Подробнее</a>
           <a class="button2" href="#">Забронировать</a>
         </div>
@@ -121,13 +135,11 @@
           <a href="#">Desert quail inn</a>
           <p>мотель</p>
           <p>от 3000 Р.</p>
-           </div>
-          <div class="inner-description-button">
           <a class="button1" href="#">Подробнее</a>
           <a class="button2" href="#">Забронировать</a>
         </div>
           <div class="inner-description-rating">
-            <img src="img/svg-sedona/star.svg" alt="количество звезд"class="3stars">
+            <img src="img/svg-sedona/star.svg" alt="количество звезд" class="3stars">
           <button type="button" disabled>Рейтинг: 8.7</button>
         </div>
         </li>
@@ -139,8 +151,6 @@
           <a href="#">Villas at poco diablo</a>
           <p>Апартаменты</p>
           <p>от 2000 Р.</p>
-        </div>
-         <div class="inner-description-button">
           <a class="button1" href="#">Подробнее</a>
           <a class="button2" href="#">Забронировать</a>
         </div>
