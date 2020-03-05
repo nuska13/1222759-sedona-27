@@ -513,6 +513,11 @@ a {
   text-align: left;
 }
 
+.filters form {
+  display: flex;
+  position: relative;
+}
+
 fieldset {
   border: none;
   width: 245px;
@@ -533,8 +538,7 @@ fieldset {
   font-size: 16px;
   font-weight: bold;
   line-height: 13px;
-  margin-left: 72px;
-  top: 87px;
+  margin: 31px 115px 31px 72px;
 }
 
 .filter ul {
@@ -542,11 +546,13 @@ fieldset {
 }
 
 .filter-option {
+  position: relative;
+  display: flex;
   color: #ffffff;
   font-size: 14px;
   line-height: 21px;
-  margin-left: 72px;
-  margin-top: 36px;
+  /*margin-left: 32px;
+  margin-top: 23px;*/
 }
 
 .filter-option input[type="checkbox"] + .checkbox-indicator {
@@ -573,18 +579,30 @@ fieldset {
   color: #6a6a6a;;
 }
 
+.checkbox-indicator {
+  margin-right: 15px;
+}
+
+.filter-range {
+width: 330px;
+margin: 31px 44px 31px 200px;
+color: #ffffff;
+text-transform: uppercase;
+right: 0;
+}
+
 .filter-range-title {
   font-size: 16px;
   font-weight: bold;
   line-height: 21px;
+  text-align: left;
   margin-bottom: 13px;
-  margin-right: 206px;
-  margin-top: 87px;
 }
 
 .price-controls {
   position: relative;
   height: 32px;
+  width: 314px;
   margin-bottom: 22px;
   margin-right: 74px;
   font-size: 0;
@@ -613,7 +631,7 @@ fieldset {
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 156px;
+  width: 90px;
   padding-left: 65px;
 }
 
@@ -633,6 +651,7 @@ fieldset {
 }
 
 .range-controls .scale {
+  width: 314px;
   height: 2px;
   background: rgba(255, 255, 255, 0.3);
 }
@@ -646,18 +665,18 @@ background: #ffffff;
 .range-toggle {
   position: absolute;
   top: -9px;
-  width: 20px;
-  height: 22px;
+  width: 4px;
+  height: 4px;
   background: #ababab;
-  border: 1px solid #ffffff;
+  border: 8px solid #ffffff;
   border-radius: 50%;
   box-shadow:  0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 
 .range-toggle:hover {
-  width: 22px;
-  height: 24px;
+  width: 6px;
+  height: 6px;
 }
 
 .range-toggle-min {
@@ -665,7 +684,7 @@ background: #ffffff;
 }
 
 .range-toggle-max {
-  left: 80%;
+  left: 90%;
 }
 
 .btn-transparent {
@@ -712,15 +731,14 @@ span {
 }
 
 .switcher {
+  height: 20px;
   width: 200px;
   background-image: url(../img/png/icon-up-dir.png) no-repeat;
   color: #cacaca;
-  width: 11px;
-  height: 10px;
+  left: 0;
   background-image: url(img/png/icon-down-dir.png) no-repeat;
   color: #81b3d2;
-  width: 11px;
-  height: 10px;
+  right: 0;
 }
 
 .sorting p {
@@ -819,13 +837,14 @@ span {
 a.button1 {
   font-size: 14px;
   color: #ffffff;
-  width: 110px;
+  width: 76px;
   background-color: #81b3d2;
   padding: 8px 17px;
 }
 
 a.button1:hover,
 .button1:focus {
+  color: #ffffff;
   background-color: #669ec0;
 }
 
@@ -837,46 +856,51 @@ a.button1:active {
 a.button2 {
   font-size: inherit;
   color: #ffffff;
-  width: 142px;
+  width: 110px;
   background-color: #766357;
   padding: 8px 16px;
 }
 
 a.button2:hover,
 a.button2:focus {
+  color: #ffffff;
   background-color: #604e43;
 }
 
 a.button2:active {
-   color: rgba(255 255 255, 0.3);
+   color: rgba(255, 255, 255, 0.3);
    background-color: #503e33;
 }
 
-.inner-description-raiting {
+/*.inner-description-raiting {
   display: flex;
   justify-content: space-between;
-}
+}*/
 
 .raiting-stars {
+  height: 17px;
   background-image: url(../img/png/star.png);
   background-repeat: repeat-x;
+  margin: 29px 72px 0 0;
 }
 
 .star4 {
-  width: 96px;
+  width: 72px;
+  left: 18px;
 }
 
 .star3 {
-  width: 72px;
+  width: 55px;
 }
 
 .star2 {
-  width: 48px;
+  width: 35px;
 }
 
 .raiting-number {
   width: 110px;
-  padding: 3px 13px;
+  padding: 5px 13px;
   background-color: #f2f2f2;
   color: #666666;
+  margin: 47px 72px 30px 0;
 }
