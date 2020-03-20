@@ -301,7 +301,6 @@ a {
     display: none;
   }
 
-
   .booking-form {
     position: absolute;
     z-index: 3;
@@ -315,10 +314,6 @@ a {
     margin: auto;
     right: 0;
     left: 0;
-  }
-
-  .booking-form-closed {
-    display: none;
   }
 
   .booking-form input[type="text"] {
