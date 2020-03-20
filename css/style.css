@@ -487,6 +487,7 @@ a {
   .map iframe {
   position: absolute;
   z-index: 2;
+  border: 0;
   }
 
 .main-footer {
