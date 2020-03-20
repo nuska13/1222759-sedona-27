@@ -101,6 +101,7 @@ a {
 
 .inner-background {
   background-image: url(../img/jpg/filter-background.jpg);
+  background-color: #283c44;
   background-repeat: no-repeat;
   background-position: top center;
   width: 1200px;
@@ -284,13 +285,22 @@ a {
   background-color: #503e33;
   }
 
-.modal-form-button .modal {
+.modal-form-button .modal-form {
   display: flex;
   }
 
-  #modal-form {
+  .modal-form {
     position: relative;
   }
+
+  .modal-form-visible {
+    display: flex;
+  }
+
+  .modal-form-invisible {
+    display: none;
+  }
+
 
   .booking-form {
     position: absolute;
@@ -305,6 +315,10 @@ a {
     margin: auto;
     right: 0;
     left: 0;
+  }
+
+  .booking-form-closed {
+    display: none;
   }
 
   .booking-form input[type="text"] {
@@ -412,10 +426,11 @@ a {
   box-sizing: border-box;
   padding: 9px;
   margin: 0;
+  width: 38px;
   }
 
-  #field-amount-adult,
-  #field-amount-kids {
+  .field-amount-adult,
+  .field-amount-kids {
     width: 38px;
     height: 38px;
     text-align: center;
@@ -502,10 +517,11 @@ a {
 
 .footer-contacts p {
   margin: 0;
+  margin-bottom: 16px;
 }
 
-.tel {
-  margin-top: 16px;
+.footer-contacts .tel {
+  color: #000000;
 }
 
 .footer-social ul {
@@ -539,15 +555,26 @@ a {
 }
 
 .footer-copyright {
-  font-size: 14px;
-  font-weight: 400;
-  width: 300px;
-  padding: 39px 101px 40px 0;
+  display: flex;
+  padding: 39px 80px 40px 0;
   margin: 0;
+}
+
+.footer-copyright p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: right;
+  padding-right: 8px;
+  padding-top: 8px;
+  margin: 0;
+  width: 90px;
 }
 
 .footer-copyright img {
   fill: #231f20;
+  margin: 0;
+  width: 115px;
 }
 
 .footer-copyright img:hover,
@@ -565,6 +592,7 @@ a {
   text-align: left;
   background-image: url(../img/jpg/filter-background.jpg);
   background-repeat: no-repeat;
+  background-color: #283c44;
   top: 0;
   padding: 31px 72px;
 }
