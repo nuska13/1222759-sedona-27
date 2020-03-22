@@ -97,17 +97,17 @@ a {
 
  .sell-1 {
   text-align: left;
-  padding-left: 72px;
+  padding-left: 71px;
 }
 
 .sell-2 {
  text-align: left;
- padding-left: 14px;
+ padding-left: 13px;
 }
 
  .sell-3 {
   text-align: right;
-  padding-right: 15px;
+  padding-right: 18px;
 }
 
  .sell-4 {
@@ -218,18 +218,24 @@ a {
   width: 400px;
   text-align: center;
   margin: 0;
+  box-sizing: border-box;
+  padding-top: 37px;
+  padding-bottom: 79px;
 }
 
 .item-house {
-padding: 43px 56px 79px 48px;
+padding-right: 56px;
+padding-left: 48px;
 }
 
 .item-burger {
-padding: 42px 88px 79px 45px;
+padding-right: 51px;
+padding-left: 45px;
 }
 
 .item-souvenir {
-padding: 37px 48px 79px 0;
+padding-right: 15px;
+padding-left: 12px;
 }
 
 .reasons-item h3,
@@ -491,12 +497,19 @@ padding-top: 23px;
     height: 38px;
     background-color: #f2f2f2;
     border: none;
-    font-family: inherit;
-    font-size: 14px;
-    margin-bottom: 72px;
+  }
+
+  .btn-minus {
+    padding-bottom: 3px;
+  }
+
+  .btn-plus {
+    padding-top: 5px;
   }
 
   .booking-form .find {
+  display: block;
+  text-align: center;
   font-family: inherit;
   font-size: 21px;
   font-weight: bold;
@@ -504,8 +517,8 @@ padding-top: 23px;
   margin-top: 54px;
   background-color: #81b3d2;
   box-sizing: border-box;
-  width: 458px;
-  padding: 19px 197px;
+  width: 100%;
+  padding: 15px 19px;
   }
 
   .booking-form .find:hover,
@@ -711,13 +724,21 @@ fieldset {
   height: 23px;
 }
 
-/*.filter-option input[type="checkbox"]:checked input[type="checkbox"]:disabled + .checkbox-indicator {
-  background-image: url(../img/png/checkbox-on.png);
+.filter-option input[type="checkbox"]:disabled + .checkbox-indicator {
+  background-image: url(../img/png/checkbox-off-3.png);
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 23px;
+  color: #6a6a6a;
+}
+
+.filter-option input[type="checkbox"]:checked:disabled + .checkbox-indicator {
+  background-image: url(../img/png/checkbox-on-2.png);
   background-repeat: no-repeat;
   width: 27px;
   height: 23px;
-  color: #6a6a6a;;
-}*/
+  color: #6a6a6a;
+}
 
 .filter-range {
  width: 319px;
@@ -854,15 +875,14 @@ span {
   line-height: 26px;
   font-weight: bold;
   color: #000000;
-  width: 164px;
+  width: 130px;
   vertical-align: middle;
   padding: 0;
 }
 
 .sorting {
   display: flex;
-  justify-content: space-between;
-  width: 358px;
+  width: 750px;
 }
 
 .sorting p {
@@ -871,6 +891,7 @@ span {
   color: #000000;
   vertical-align: middle;
   padding: 0;
+  padding-left: 35px;
   margin: 0;
 }
 
@@ -902,7 +923,7 @@ span {
   display: flex;
   width: 40px;
   justify-content: space-between;
-  margin-left: 490px;
+  margin-left: 125px;
 }
 
 .button-switcher-up {
@@ -983,7 +1004,8 @@ span {
 
 .inner-description {
   width: 750px;
-  margin: 27px;
+  margin: 24px;
+  margin-left: 30px;
 }
 
 .cost {
@@ -991,9 +1013,10 @@ span {
 }
 
 .inner-description p {
-  width: 120px;
+  width: 117px;
   margin: 0;
   padding-bottom: 13px;
+  padding-top: 2px;
 }
 
 a.button1 {
@@ -1001,7 +1024,7 @@ a.button1 {
   color: #ffffff;
   width: 76px;
   background-color: #81b3d2;
-  padding: 5px 20px;
+  padding: 5px 16px;
 }
 
 a.button1:hover,
@@ -1020,7 +1043,7 @@ a.button2 {
   color: #ffffff;
   width: 110px;
   background-color: #766357;
-  padding: 5px 15px;
+  padding: 5px 19px;
 }
 
 a.button2:hover,
@@ -1038,6 +1061,7 @@ a.button2:active {
   height: 17px;
   background-image: url(../img/png/star.png);
   background-repeat: repeat-x;
+  background-position-x: 1px;
   margin: 29px 72px 0 0;
 }
 

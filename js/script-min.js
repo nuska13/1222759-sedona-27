@@ -1,0 +1,1 @@
+var btn=document.querySelector(".modal-form-button"),form=document.querySelector(".modal-form");btn.addEventListener("click",function(o){o.preventDefault(),form.classList.contains("modal-form-visible")?(form.classList.add("modal-form-invisible"),form.classList.remove("modal-form-visible")):(form.classList.add("modal-form-visible"),form.classList.remove("modal-form-invisible"))});
