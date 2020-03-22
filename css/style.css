@@ -22,7 +22,11 @@ body {
 .inner-page {
   width: 1200px;
   margin: 0 auto;
-  font-family: inherit;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
   text-transform: uppercase;
   background-color: #f2f2f2;
   background-size: 1280px 933px;
@@ -83,20 +87,32 @@ a {
   color: #766357;
 }
 
- .sell-1,
- .sell-2 {
-  text-align: left;
+.sell-1,
+.sell-2,
+.sell-3,
+.sell-4 {
   padding-top: 17px;
-  padding-bottom: 17px;
+  padding-bottom: 14px;
+}
+
+ .sell-1 {
+  text-align: left;
   padding-left: 72px;
 }
 
- .sell-3,
- .sell-4 {
+.sell-2 {
+ text-align: left;
+ padding-left: 14px;
+}
+
+ .sell-3 {
   text-align: right;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  padding-right: 72px;
+  padding-right: 15px;
+}
+
+ .sell-4 {
+ text-align: right;
+ padding-right: 72px;
 }
 
 .inner-background {
@@ -120,22 +136,22 @@ a {
   margin: 0 auto;
   height: 800px;
   background-image: url(../img/png/polygon.png), url(../img/png/Layer14.png), url(../img/png/welcome.png), url(../img/jpg/background.jpg);
-  background-size: 101% 59px, 100% 216px, 459px 353px, 100% 773px;
+  background-size: 100% 59px, 100% 216px, 459px 353px, 100% 773px;
   background-repeat: no-repeat;
-  background-position: top 509px center, top 566px center, top 132px center, top center;
+  background-position: top 509px center, top 567px center, top 134px center, top center;
 }
 
 .main-description {
- margin: -180px 300px 56px 300px;
+ margin: -180px 300px 50px 300px;
 }
 
 .description {
   font-size: 21px;
   font-weight: bold;
   text-align: center;
-  letter-spacing: normal;
   background-color: #ffffff;
-  margin: 0;
+  letter-spacing: 0.1px;
+  margin: 7px;
 }
 
 .five-reasons {
@@ -143,8 +159,8 @@ a {
   font-weight: 400;
   color: #333333;
   text-align: center;
-  letter-spacing: normal;
-  padding-top: 38px;
+  letter-spacing: 0.15px;
+  padding-top: 20px;
   margin: 0;
 }
 
@@ -162,14 +178,22 @@ a {
   background-color: #eeeeee;
 }
 
-.first-reason,
+.first-reason {
+  text-align: center;
+  color: #ffffff;
+  background-color: #81b3d2;
+  margin: 0;
+  padding: 46px 60px 60px 60px;
+  height: 148px;
+}
+
 .second-reason {
   text-align: center;
   color: #ffffff;
   background-color: #81b3d2;
   margin: 0;
-  width: 400px;
-  padding-top: 46px;
+  padding: 46px 40px 60px 40px;
+  height: 150px;
 }
 
 .first-reason-image {
@@ -182,29 +206,9 @@ a {
   height: 256px;
 }
 
-.third-reason {
-  text-align: center;
-  width: 400px;
-  padding-top: 50px;
-  padding-bottom: 64px;
-}
-
-.forth-reason {
-  text-align: center;
-  width: 400px;
-  padding-top: 50px;
-  padding-bottom: 64px;
-}
-
-.fifth-reason {
-  text-align: center;
-  width: 400px;
-  padding-top: 50px;
-  padding-bottom: 64px;
-}
-
 .benefits-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -214,18 +218,31 @@ a {
   width: 400px;
   text-align: center;
   margin: 0;
-  padding: 60px 60px 85px 73px;
+}
+
+.item-house {
+padding: 43px 56px 79px 48px;
+}
+
+.item-burger {
+padding: 42px 88px 79px 45px;
+}
+
+.item-souvenir {
+padding: 37px 48px 79px 0;
 }
 
 .reasons-item h3,
 .benefits-item h3 {
   font-size: 21px;
   font-weight: bold;
+  line-height: 21px;
   margin: 0;
+  padding: 0 50px;
 }
 
 .benefits-item h3 {
-  margin-bottom: 30px;
+  padding-top: 20px;
 }
 
 .reasons-item p,
@@ -233,29 +250,54 @@ a {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  margin-top: 30px;
-  margin-bottom: 0;
+  margin: 0;
+  padding-top: 23px;
+}
+
+.benefits-item p {
+padding-top: 23px;
+}
+
+.third-reason {
+  text-align: center;
+  width: 208px;
+  padding: 48px 97px 58px 93px;
+}
+
+.forth-reason {
+  text-align: center;
+  width: 265px;
+  padding: 48px 59px 58px 69px;
+}
+
+.fifth-reason {
+  text-align: center;
+  width: 258px;
+  padding: 48px 70px 58px 80px;
 }
 
 .booking {
   position: relative;
   text-align: center;
-  padding-top: 57px;
-  padding-bottom: 0;
+  padding-top: 30px;
+  margin: 0;
 }
 
 .booking h3 {
   font-size: 30px;
   color: #000000;
   text-align: center;
-  margin-bottom: 30px;
+  padding: 27px 0;
+  margin: 0;
 }
 
 .booking p {
   font-size: 14px;
+  line-height: 24px;
   color: #333333;
   text-align: center;
-  margin-bottom: 52px;
+  padding-bottom: 45px;
+  margin: 0;
 }
 
 .modal-form-button {
@@ -270,7 +312,7 @@ a {
   border: none;
   box-sizing: border-box;
   padding-top: 34px;
-  padding-bottom: 34px;
+  padding-bottom: 30px;
   width: 568px;
   text-align: center;
 }
@@ -310,6 +352,7 @@ a {
     box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
     box-sizing: border-box;
     width: 568px;
+    height: 392px;
     padding: 55px;
     margin: auto;
     right: 0;
@@ -326,7 +369,7 @@ a {
   border: none;
   box-sizing: border-box;
   width: 346px;
-  padding: 9px;
+  padding: 9px 14px;
   margin-bottom: 29px;
   }
 
@@ -343,7 +386,7 @@ a {
     position: absolute;
     display: block;
     top: 60px;
-    right: 60px;
+    right: 57px;
     background: transparent;
     border: none;
     fill: #cacaca;
@@ -353,7 +396,7 @@ a {
     position: absolute;
     display: block;
     top: 125px;
-    right: 60px;
+    right: 57px;
     background: transparent;
     border: none;
     fill: #cacaca;
@@ -383,12 +426,12 @@ a {
   }
 
   .label-in {
-    margin: 8px 0;
+    margin: 6px 0;
     margin-right: 21px;
   }
 
   .label-out {
-    margin: 8px 0;
+    margin: 6px 0;
     margin-right: 17px;
   }
 
@@ -450,7 +493,7 @@ a {
     border: none;
     font-family: inherit;
     font-size: 14px;
-    margin-bottom: 54px;
+    margin-bottom: 72px;
   }
 
   .booking-form .find {
@@ -474,9 +517,13 @@ a {
   background-color: #5496bd;
   }
 
-.map {
+  .booking-form .find a:active {
+  color: rgba(255, 255, 255, 0.3);
+  }
+
+ .map {
   height: 475px;
-}
+ }
 
   .map p {
   position: relative;
@@ -508,12 +555,12 @@ a {
   font-weight: bold;
   line-height: 26px;
   width: 355px;
-  padding: 36px 0 32px 132px;
+  padding: 29px 0 32px 124px;
 }
 
 .footer-contacts p {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
 }
 
 .footer-contacts .tel {
@@ -524,9 +571,9 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 150px;
+  width: 145px;
   list-style: none;
-  margin: 36px 228px 36px 169px;
+  margin: 31px 216px 36px 169px;
   padding: 0;
 }
 
@@ -545,14 +592,16 @@ a {
 }
 
 .social-button:active {
-  fill: #ffffff;
-  opacity: 0.3;
   background-color: #5496bd;
+}
+
+.social-button:active path {
+ fill: rgba(255, 255, 255, 0.3);
 }
 
 .footer-copyright {
   display: flex;
-  padding: 39px 80px 40px 0;
+  padding: 35px 100px 40px 0;
   margin: 0;
 }
 
@@ -562,23 +611,23 @@ a {
   font-weight: 400;
   text-align: right;
   padding-right: 8px;
-  padding-top: 8px;
+  padding-top: 7px;
   margin: 0;
   width: 90px;
 }
 
-.footer-copyright img {
+.footer-copyright a {
   fill: #231f20;
   margin: 0;
   width: 115px;
 }
 
-.footer-copyright img:hover,
-.footer-copyright img:focus {
+.footer-copyright path:hover,
+.footer-copyright path:focus {
   fill: #81b3d2;
 }
 
-.footer-copyright img:active {
+.footer-copyright path:active {
   fill: #bdbbbc;
 }
 
@@ -590,7 +639,7 @@ a {
   background-repeat: no-repeat;
   background-color: #283c44;
   top: 0;
-  padding: 31px 72px;
+  padding: 30px 72px;
 }
 
 .filters form {
@@ -599,8 +648,9 @@ a {
 
 fieldset {
   border: none;
-  width: 245px;
+  width: 254px;
   margin: 0;
+  padding: 0;
   position: relative;
 }
 
@@ -621,8 +671,8 @@ fieldset {
   display: flex;
   color: #ffffff;
   font-size: 14px;
-  line-height: 21px;
-  margin-top: 23px;
+  line-height: 23px;
+  margin-top: 25px;
 }
 
 .filter-option label {
@@ -661,12 +711,16 @@ fieldset {
   height: 23px;
 }
 
-.filter-option [type="checkbox"]:disabled + .checkbox-indicator {
+/*.filter-option input[type="checkbox"]:checked input[type="checkbox"]:disabled + .checkbox-indicator {
+  background-image: url(../img/png/checkbox-on.png);
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 23px;
   color: #6a6a6a;;
-}
+}*/
 
 .filter-range {
- width: 320px;
+ width: 319px;
  margin-left: auto;
  color: #ffffff;
  text-transform: uppercase;
@@ -677,7 +731,7 @@ fieldset {
   font-weight: bold;
   line-height: 21px;
   text-align: left;
-  margin-bottom: 13px;
+  margin-bottom: 5px;
 }
 
 .price-controls {
@@ -772,7 +826,7 @@ background: #ffffff;
 .btn-transparent {
   display: block;
   margin: 0 auto;
-  padding: 11px 34px;
+  padding: 5px 34px;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
@@ -800,7 +854,7 @@ span {
   line-height: 26px;
   font-weight: bold;
   color: #000000;
-  width: 200px;
+  width: 164px;
   vertical-align: middle;
   padding: 0;
 }
@@ -808,7 +862,7 @@ span {
 .sorting {
   display: flex;
   justify-content: space-between;
-  width: 366px;
+  width: 358px;
 }
 
 .sorting p {
@@ -846,9 +900,9 @@ span {
 
 .switcher {
   display: flex;
-  width: 50px;
+  width: 40px;
   justify-content: space-between;
-  margin-left: 450px;
+  margin-left: 490px;
 }
 
 .button-switcher-up {
@@ -867,15 +921,15 @@ span {
   fill: #cacaca;
 }
 
-.button-switcher-up:focus,
-.button-switcher-up:hover,
-.button-switcher-down:focus,
-.button-switcher-down:hover {
-  fill: #ffffff;
+.button-switcher-up path:focus,
+.button-switcher-up path:hover,
+.button-switcher-down path:focus,
+.button-switcher-down path:hover {
+  fill: #000000;
 }
 
-.button-switcher-up:active,
-.button-switcher-down:active {
+.button-switcher-up path:active,
+.button-switcher-down path:active {
   fill: #81b3d2;
 }
 
@@ -892,6 +946,7 @@ span {
   flex-direction: row;
   width: 1200px;
   border: 1px solid #f2f2f2;
+  border-top: 0;
 }
 
 .results-item p {
@@ -919,7 +974,7 @@ span {
 .inner-description-image {
   width: 135px;
   height: 90px;
-  margin: 30px 0 30px 72px;
+  margin: 27px 0 27px 72px;
 }
 
 .inner-description a {
@@ -928,7 +983,7 @@ span {
 
 .inner-description {
   width: 750px;
-  margin: 30px;
+  margin: 27px;
 }
 
 .cost {
@@ -936,9 +991,9 @@ span {
 }
 
 .inner-description p {
-  width: 132px;
+  width: 120px;
   margin: 0;
-  padding: 4px 0;
+  padding-bottom: 13px;
 }
 
 a.button1 {
@@ -946,7 +1001,7 @@ a.button1 {
   color: #ffffff;
   width: 76px;
   background-color: #81b3d2;
-  padding: 8px 17px;
+  padding: 5px 20px;
 }
 
 a.button1:hover,
@@ -965,7 +1020,7 @@ a.button2 {
   color: #ffffff;
   width: 110px;
   background-color: #766357;
-  padding: 8px 16px;
+  padding: 5px 15px;
 }
 
 a.button2:hover,
@@ -1002,9 +1057,9 @@ a.button2:active {
 }
 
 .raiting-number {
-  width: 110px;
-  padding: 5px 13px;
+  width: 86px;
+  padding: 1px 10px;
   background-color: #f2f2f2;
   color: #666666;
-  margin: 47px 72px 30px 0;
+  margin: 47px 72px 30px 35px;
 }
