@@ -189,10 +189,12 @@ a {
 
 .first-reason {
   padding: 46px 60px 60px 60px;
+  width: 280px;
 }
 
 .second-reason {
   padding: 46px 40px 60px 40px;
+  width: 320px;
 }
 
 .first-reason-image {
@@ -559,6 +561,7 @@ a {
 .main-footer {
   display: flex;
   justify-content: space-between;
+  height: 120px;
 }
 
 .footer-contacts {
@@ -629,7 +632,7 @@ a {
   padding-right: 8px;
   padding-top: 7px;
   margin: 0;
-  width: 115px;
+  width: 120px;
 }
 
 .footer-copyright a {
