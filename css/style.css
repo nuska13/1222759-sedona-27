@@ -95,24 +95,24 @@ a {
   padding-bottom: 14px;
 }
 
- .sell-1 {
+.sell-1 {
   text-align: left;
   padding-left: 71px;
 }
 
 .sell-2 {
- text-align: left;
- padding-left: 13px;
+  text-align: left;
+  padding-left: 13px;
 }
 
- .sell-3 {
+.sell-3 {
   text-align: right;
   padding-right: 18px;
 }
 
- .sell-4 {
- text-align: right;
- padding-right: 72px;
+.sell-4 {
+  text-align: right;
+  padding-right: 72px;
 }
 
 .inner-background {
@@ -142,7 +142,7 @@ a {
 }
 
 .main-description {
- margin: -180px 300px 50px 300px;
+  margin: -180px 300px 50px 300px;
 }
 
 .description {
@@ -178,22 +178,21 @@ a {
   background-color: #eeeeee;
 }
 
-.first-reason {
-  text-align: center;
-  color: #ffffff;
-  background-color: #81b3d2;
-  margin: 0;
-  padding: 46px 60px 60px 60px;
-  height: 148px;
-}
-
+.first-reason,
 .second-reason {
   text-align: center;
   color: #ffffff;
   background-color: #81b3d2;
   margin: 0;
-  padding: 46px 40px 60px 40px;
   height: 150px;
+}
+
+.first-reason {
+  padding: 46px 60px 60px 60px;
+}
+
+.second-reason {
+  padding: 46px 40px 60px 40px;
 }
 
 .first-reason-image {
@@ -224,18 +223,18 @@ a {
 }
 
 .item-house {
-padding-right: 56px;
-padding-left: 48px;
+  padding-right: 56px;
+  padding-left: 48px;
 }
 
 .item-burger {
-padding-right: 51px;
-padding-left: 45px;
+  padding-right: 51px;
+  padding-left: 45px;
 }
 
 .item-souvenir {
-padding-right: 15px;
-padding-left: 12px;
+  padding-right: 15px;
+  padding-left: 12px;
 }
 
 .reasons-item h3,
@@ -261,7 +260,7 @@ padding-left: 12px;
 }
 
 .benefits-item p {
-padding-top: 23px;
+  padding-top: 23px;
 }
 
 .third-reason {
@@ -331,41 +330,41 @@ padding-top: 23px;
 .modal-form-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
-  }
+}
 
 .modal-form-button .modal-form {
   display: flex;
-  }
+}
 
-  .modal-form {
-    position: relative;
-  }
+.modal-form {
+  position: relative;
+}
 
-  .modal-form-visible {
-    display: flex;
-  }
+.modal-form-visible {
+  display: flex;
+}
 
-  .modal-form-invisible {
-    display: none;
-  }
+.modal-form-invisible {
+  display: none;
+}
 
-  .booking-form {
-    position: absolute;
-    z-index: 3;
-    visibility: visible;
-    color: #000000;
-    background-color: #ffffff;
-    box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
-    box-sizing: border-box;
-    width: 568px;
-    height: 392px;
-    padding: 55px;
-    margin: auto;
-    right: 0;
-    left: 0;
-  }
+.booking-form {
+  position: absolute;
+  z-index: 3;
+  visibility: visible;
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+  box-sizing: border-box;
+  width: 568px;
+  height: 392px;
+  padding: 55px;
+  margin: auto;
+  right: 0;
+  left: 0;
+}
 
-  .booking-form input[type="text"] {
+.booking-form input[type="text"] {
   font-family: inherit;
   text-transform: uppercase;
   color: #000000;
@@ -377,89 +376,89 @@ padding-top: 23px;
   width: 346px;
   padding: 9px 14px;
   margin-bottom: 29px;
-  }
-
-  .booking-form input:hover {
-  background-color: #ebebeb;
-  }
-
-  .booking-form input:focus {
-  border: 2px solid #e5e5e5;
-  background-color: #ffffff;
-  }
-
-  .calendar1 {
-    position: absolute;
-    display: block;
-    top: 60px;
-    right: 57px;
-    background: transparent;
-    border: none;
-    fill: #cacaca;
-  }
-
-  .calendar2 {
-    position: absolute;
-    display: block;
-    top: 125px;
-    right: 57px;
-    background: transparent;
-    border: none;
-    fill: #cacaca;
-  }
-
-  .calendar1:focus,
-  .calendar2:focus {
-    fill: #000000;
-  }
-
-  .calendar1:hover,
-  .calendar2:hover {
-    fill: #000000;
-  }
-
-  .calendar1:active,
-  .calendar2:active {
-   fill: #81b3d2
 }
 
-  .booking-form label {
+.booking-form input:hover {
+  background-color: #ebebeb;
+}
+
+.booking-form input:focus {
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.calendar1 {
+  position: absolute;
+  display: block;
+  top: 60px;
+  right: 57px;
+  background: transparent;
+  border: none;
+  fill: #cacaca;
+}
+
+.calendar2 {
+  position: absolute;
+  display: block;
+  top: 125px;
+  right: 57px;
+  background: transparent;
+  border: none;
+  fill: #cacaca;
+}
+
+.calendar1:focus,
+.calendar2:focus {
+  fill: #000000;
+}
+
+.calendar1:hover,
+.calendar2:hover {
+  fill: #000000;
+}
+
+.calendar1:active,
+.calendar2:active {
+  fill: #81b3d2
+}
+
+.booking-form label {
   font-family: #000000;
   font-size: 14px;
   font-weight: bold;
   float: left;
   line-height: 26px;
-  }
+}
 
-  .label-in {
-    margin: 6px 0;
-    margin-right: 21px;
-  }
+.label-in {
+  margin: 6px 0;
+  margin-right: 21px;
+}
 
-  .label-out {
-    margin: 6px 0;
-    margin-right: 17px;
-  }
+.label-out {
+  margin: 6px 0;
+  margin-right: 17px;
+}
 
-  .date {
+.date {
   color: #cacaca;
-  }
+}
 
-  .date:hover,
-  .date:focus {
+.date:hover,
+.date:focus {
   color: #000000;
-  }
+}
 
-  .date:active {
+.date:active {
   color: #81b3d2;
-  }
+}
 
-  .booking-form .half-width {
-    display: flex;
-    flex-direction: row;
-  }
+.booking-form .half-width {
+  display: flex;
+  flex-direction: row;
+}
 
-  .half-width input[type="text"] {
+.half-width input[type="text"] {
   font-family: inherit;
   text-transform: uppercase;
   color: #000000;
@@ -471,43 +470,43 @@ padding-top: 23px;
   padding: 9px;
   margin: 0;
   width: 38px;
-  }
+}
 
-  .field-amount-adult,
-  .field-amount-kids {
-    width: 38px;
-    height: 38px;
-    text-align: center;
-  }
+.field-amount-adult,
+.field-amount-kids {
+  width: 38px;
+  height: 38px;
+  text-align: center;
+}
 
-  .label-adult {
-    margin: 8px 0;
-    margin-right: 41px;
-  }
+.label-adult {
+  margin: 8px 0;
+  margin-right: 41px;
+}
 
-  .label-kids {
-    margin: 8px 0;
-    margin-right: 27px;
-    margin-left: 53px;
-  }
+.label-kids {
+  margin: 8px 0;
+  margin-right: 27px;
+  margin-left: 53px;
+}
 
-  .btn-minus,
-  .btn-plus {
-    width: 38px;
-    height: 38px;
-    background-color: #f2f2f2;
-    border: none;
-  }
+.btn-minus,
+.btn-plus {
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+  border: none;
+}
 
-  .btn-minus {
-    padding-bottom: 3px;
-  }
+.btn-minus {
+  padding-bottom: 3px;
+}
 
-  .btn-plus {
-    padding-top: 5px;
-  }
+.btn-plus {
+  padding-top: 5px;
+}
 
-  .booking-form .find {
+.booking-form .find {
   display: block;
   text-align: center;
   font-family: inherit;
@@ -519,36 +518,36 @@ padding-top: 23px;
   box-sizing: border-box;
   width: 100%;
   padding: 15px 19px;
-  }
+}
 
-  .booking-form .find:hover,
-  .booking-form .find:focus {
+.booking-form .find:hover,
+.booking-form .find:focus {
   background-color: #669ec0;
-  }
+}
 
-  .booking-form .find:active {
+.booking-form .find:active {
   background-color: #5496bd;
-  }
+}
 
-  .booking-form .find a:active {
+.booking-form .find a:active {
   color: rgba(255, 255, 255, 0.3);
-  }
+}
 
- .map {
+.map {
   height: 475px;
- }
+}
 
-  .map p {
+.map p {
   position: relative;
   z-index: 1;
   margin: 0;
-  }
+}
 
-  .map iframe {
+.map iframe {
   position: absolute;
   z-index: 2;
   border: 0;
-  }
+}
 
 .main-footer {
   color: #000000;
@@ -580,14 +579,18 @@ padding-top: 23px;
   color: #000000;
 }
 
+.footer-social {
+  width: 450px;
+}
+
 .footer-social ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 145px;
   list-style: none;
-  margin: 31px 216px 36px 169px;
-  padding: 0;
+  margin: 0;
+  padding: 31px 200px 36px 120px;
 }
 
 .social-button {
@@ -609,7 +612,7 @@ padding-top: 23px;
 }
 
 .social-button:active path {
- fill: rgba(255, 255, 255, 0.3);
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .footer-copyright {
@@ -626,7 +629,7 @@ padding-top: 23px;
   padding-right: 8px;
   padding-top: 7px;
   margin: 0;
-  width: 90px;
+  width: 115px;
 }
 
 .footer-copyright a {
@@ -741,10 +744,10 @@ fieldset {
 }
 
 .filter-range {
- width: 319px;
- margin-left: auto;
- color: #ffffff;
- text-transform: uppercase;
+  width: 319px;
+  margin-left: auto;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .filter-range-title {
@@ -814,9 +817,9 @@ fieldset {
 }
 
 .range-controls .bar {
-width: 85%;
-height: 2px;
-background: #ffffff;
+  width: 85%;
+  height: 2px;
+  background: #ffffff;
 }
 
 .range-toggle {
@@ -968,6 +971,7 @@ span {
   width: 1200px;
   border: 1px solid #f2f2f2;
   border-top: 0;
+  box-sizing: border-box;
 }
 
 .results-item p {
@@ -985,11 +989,11 @@ span {
 
 .results-item a:hover,
 .results-item a:focus {
-   color: #81b3d2;
+  color: #81b3d2;
 }
 
 .results-item a:active {
-   color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .inner-description-image {
@@ -1053,8 +1057,8 @@ a.button2:focus {
 }
 
 a.button2:active {
-   color: rgba(255, 255, 255, 0.3);
-   background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
 }
 
 .raiting-stars {
